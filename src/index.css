@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Playfair+Display:wght@400;600&display=swap");
+
+
 * {
   box-sizing: border-box;
+  font-family: 'Philosopher', sans-serif;
 }
 
-html {
-  font-family: serif;
-}
 
 body {
   margin: 0;
