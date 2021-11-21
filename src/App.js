@@ -36,7 +36,8 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div  class="container">
+      <div class="task-container">
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
@@ -50,6 +51,7 @@ const App = () => {
         ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
         } */}
       </section>
+      </div>
     </div>
   );
 };
