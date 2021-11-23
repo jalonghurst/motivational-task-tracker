@@ -36,7 +36,8 @@ const App = () => {
   }
 
   return (
-    <div  class="container">
+    <div  class="container"> 
+    <div class="task-container"></div>
       <div class="task-container">
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
@@ -52,6 +53,7 @@ const App = () => {
         } */}
       </section>
       </div>
+     
     </div>
   );
 };
