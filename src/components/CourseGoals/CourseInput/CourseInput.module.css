@@ -11,21 +11,23 @@
 .form-control input {
   display: block;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #FE6F6B;
+  border-radius: 3rem;
   font: inherit;
   line-height: 1.5rem;
   padding: 0 0.25rem;
+  color:#efefef;
+  background:#0C0E1B;
 }
 
 .form-control input:focus {
   outline: none;
-  background: #fad0ec;
-  border-color: #8b005d;
+  background: #0352b8;
+  border-color: #FE6F6B;
 }
 
 .form-control.invalid input{
-  border-color: red; 
+  border-color: #FE6F6B;; 
   background: rgb(221, 163, 163);
 }
 
