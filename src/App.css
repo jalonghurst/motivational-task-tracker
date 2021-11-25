@@ -42,3 +42,10 @@
   /* word-wrap: break-word;
   text-align: center; */
 }
+
+
+@media (min-width: 768px) {
+  .task-container {
+    min-width: 50%;}
+       
+     }
