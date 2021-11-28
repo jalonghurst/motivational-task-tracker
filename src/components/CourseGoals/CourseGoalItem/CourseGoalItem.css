@@ -2,9 +2,9 @@
   margin: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   color:#efefef;
+  border: 1px solid transparent;
   padding: 1rem 2rem;
   cursor: pointer;
-  border: 1px solid #FE6F6B;
   border-radius: 1rem;
   background:#0C0E1B;
 
@@ -12,7 +12,7 @@
 }
 .goal-item:hover,
 .goal-item:active {
-  background: #5046da;
+  border: 1px solid #FE6F6B;
   transition-duration: 100ms;
   ;
 }
