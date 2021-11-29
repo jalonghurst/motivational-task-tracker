@@ -1,14 +1,14 @@
 #goals {
-  width: 80%;
-  max-width: 90%;
+  width: 100%;
+  /* max-width: 90%; */
   margin: 3rem auto;
   border-radius: 10px;
   border: #09325c solid 2px;
 }
 
 #goal-form {
-  width: 80%;
-  max-width: 90%;
+  width: 100%;
+  /* max-width: 90%; */
   margin: 3rem auto;
   padding: 2rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -34,7 +34,7 @@
   padding: 2%;
   min-width: 90%;
   height: auto;
-  border: #09325c solid 2px;
+  border: #051a30 solid 2px;
   border-radius: 5%;
   /* font-family:  monospace, roboto-mono;
   font-style: italic; */
