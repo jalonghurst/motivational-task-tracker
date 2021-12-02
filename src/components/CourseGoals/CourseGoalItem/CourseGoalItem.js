@@ -1,4 +1,5 @@
 import React from 'react';
+import {GiCrossMark} from 'react-icons/gi'
 
 import './CourseGoalItem.css';
 
@@ -11,8 +12,8 @@ const CourseGoalItem = props => {
   };
 
   return (
-    <li className="goal-item" onClick={deleteHandler}>
-      {props.children}
+    <li className="goal-item" >
+      {props.children} <GiCrossMark onClick={deleteHandler}/>
     </li>
   );
 };
