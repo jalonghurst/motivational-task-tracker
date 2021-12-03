@@ -13,7 +13,7 @@ const CourseGoalItem = props => {
 
   return (
     <li className="goal-item" >
-      {props.children} <GiCrossMark onClick={deleteHandler}/>
+      {props.children} <GiCrossMark onClick={deleteHandler} />
     </li>
   );
 };
