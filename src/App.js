@@ -52,8 +52,9 @@ const App = () => {
         ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
         } */}
       </section>
+      
       </div>
-     
+     <span style={{color: "gray", textAlign: "center", paddingTop: "2%", paddingBottom: "1%"}}>Copyright ⓒ 2021 Jacqueline Longhurst. All Rights Reserved.</span>
     </div>
   );
 };
