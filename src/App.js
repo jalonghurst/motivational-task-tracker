@@ -54,7 +54,7 @@ const App = () => {
       </section>
       
       </div>
-     <span style={{color: "gray", textAlign: "center", paddingTop: "2%", paddingBottom: "1%"}}>Copyright ⓒ 2021 Jacqueline Longhurst. All Rights Reserved.</span>
+     <span style={{color: "gray", textAlign: "center", paddingTop: "3%", paddingBottom: "1%", fontSize: "0.9rem"}}>Copyright ⓒ 2021 Jacqueline Longhurst. All Rights Reserved.</span>
     </div>
   );
 };

@@ -11,7 +11,7 @@
 .form-control input {
   display: block;
   width: 100%;
-  border: 1px solid #FE6F6B;
+  border: 1px solid transparent;
   border-radius: 1rem;
   font: inherit;
   line-height: 1.5rem;
@@ -22,7 +22,6 @@
 
 .form-control input:focus {
   outline: none;
-  background:  #09325c;
   border-color: #FE6F6B;
 }
 
