@@ -6,8 +6,8 @@ import './App.css';
 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
-    { text: 'Do all exercises!', id: 'g1' },
-    { text: 'Add your first task!', id: 'g2' }
+    { text: 'Do all exercises!', id: 'g1', reminder: true},
+    { text: 'Add your first task!', id: 'g2', reminder: false }
   ]);
 
   const addGoalHandler = enteredText => {

@@ -11,6 +11,7 @@ const CourseGoalList = props => {
           key={goal.id}
           id={goal.id}
           onDelete={props.onDeleteItem}
+          reminder={false}
         >
           {goal.text}
         </CourseGoalItem>
