@@ -13,7 +13,7 @@ const App = () => {
   const addGoalHandler = enteredText => {
     setCourseGoals(prevGoals => {
       const updatedGoals = [...prevGoals];
-      updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
+      updatedGoals.unshift({ text: enteredText, id: Math.random().toString(), reminder: false });
       return updatedGoals;
     });
   };
@@ -24,21 +24,31 @@ const App = () => {
       return updatedGoals;
     });
   };
+  
+  const toggleReminder = (id) => {
+    setCourseGoals(
+      courseGoals.map((goal) =>
+      goal.id === id  ? {...goal, reminder:
+      !goal.reminder} : goal
+      )
+    )
+  }
 
+   
   let content = (
     <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
   );
 
   if (courseGoals.length > 0) {
     content = (
-      <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} />
+      <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} onToggle={toggleReminder} />
     );
   }
 
   return (
-    <div  class="container"> 
-    <div class="task-container"></div>
-      <div class="task-container">
+    <div  className="container"> 
+    <div className="task-container"></div>
+      <div className="task-container">
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>

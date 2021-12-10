@@ -14,7 +14,7 @@
 }
 .goal-item:hover,
 .goal-item:active {
-  border: 1px solid #FE6F6B;
+  border: 1px solid #FE6F6B; 
   transition-duration: 100ms;
   ;
 }

@@ -12,8 +12,8 @@ const CourseGoalItem = props => {
   };
 
   return (
-    <li className="goal-item" >
-      {props.children} <GiCrossMark onClick={deleteHandler} />
+    <li className={`goal-item ${props.reminder ? 'reminder' : ''}`} onClick={() => props.onToggle(props.id)}>
+      {props.children} <GiCrossMark onClick={deleteHandler}/>
     </li>
   );
 };
