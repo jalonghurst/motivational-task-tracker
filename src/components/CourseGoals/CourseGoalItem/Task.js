@@ -3,7 +3,7 @@ import {GiCrossMark} from 'react-icons/gi'
 
 import './CourseGoalItem.css';
 
-const CourseGoalItem = props => {
+const Task = props => {
   // const [deleteText, setDeleteText] = useState('');
 
   const deleteHandler = () => {
@@ -18,4 +18,4 @@ const CourseGoalItem = props => {
   );
 };
 
-export default CourseGoalItem;
+export default Task;

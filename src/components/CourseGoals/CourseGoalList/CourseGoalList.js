@@ -1,13 +1,13 @@
 import React from 'react';
 
-import CourseGoalItem from '../CourseGoalItem/CourseGoalItem';
+import Task from '../CourseGoalItem/Task';
 import './CourseGoalList.css';
 
 const CourseGoalList = props => {
   return (
     <ul className="goal-list">
       {props.items.map(goal => (
-        <CourseGoalItem
+        <Task
           key={goal.id}
           id={goal.id}
           reminder={goal.reminder}
@@ -15,7 +15,7 @@ const CourseGoalList = props => {
           onToggle={props.onToggle}
         >
           {goal.text}
-        </CourseGoalItem>
+        </Task>
       ))}
     </ul>
   );
