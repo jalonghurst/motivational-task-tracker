@@ -1,7 +1,7 @@
 import React from 'react';
 import {GiCrossMark} from 'react-icons/gi'
 
-import './CourseGoalItem.css';
+import './Task.css';
 
 const Task = props => {
   // const [deleteText, setDeleteText] = useState('');
