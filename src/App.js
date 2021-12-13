@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
+import TaskList from './components/CourseGoals/CourseGoalList/TaskList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
 
@@ -41,7 +41,7 @@ const App = () => {
 
   if (courseGoals.length > 0) {
     content = (
-      <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} onToggle={toggleReminder} />
+      <TaskList items={courseGoals} onDeleteItem={deleteItemHandler} onToggle={toggleReminder} />
     );
   }
 
@@ -55,7 +55,7 @@ const App = () => {
       <section id="goals">
         {content}
         {/* {courseGoals.length > 0 && (
-          <CourseGoalList
+          <TaskList
             items={courseGoals}
             onDeleteItem={deleteItemHandler}
           />
