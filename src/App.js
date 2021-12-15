@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import TaskList from './components/CourseGoals/CourseGoalList/TaskList';
+import TaskList from './components/CourseGoals/TaskList/TaskList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
 
