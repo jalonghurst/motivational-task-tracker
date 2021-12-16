@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Task from '../CourseGoalItem/Task';
+import Task from '../Task/Task';
 import './TaskList.css';
 
 const TaskList = props => {
