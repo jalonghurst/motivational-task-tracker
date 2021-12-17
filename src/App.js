@@ -34,14 +34,17 @@ const App = () => {
     )
   }
 
-   
   let content = (
     <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
   );
 
   if (courseGoals.length > 0) {
     content = (
-      <TaskList items={courseGoals} onDeleteItem={deleteItemHandler} onToggle={toggleReminder} />
+      <TaskList 
+        items={courseGoals} 
+        onDeleteItem={deleteItemHandler} 
+        onToggle={toggleReminder} 
+      />
     );
   }
 
