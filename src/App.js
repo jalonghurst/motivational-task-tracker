@@ -5,7 +5,7 @@ import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
 
 const App = () => {
-  const [courseGoals, setCourseGoals] = useState([
+  const [tasks, setCourseGoals] = useState([
     { text: 'Do all exercises!', id: 'g1', reminder: true},
     { text: 'Add your first task!', id: 'g2', reminder: false }
   ]);
@@ -27,7 +27,7 @@ const App = () => {
   
   const toggleReminder = (id) => {
     setCourseGoals(
-      courseGoals.map((goal) =>
+      tasks.map((goal) =>
       goal.id === id  ? {...goal, reminder:
       !goal.reminder} : goal
       )
@@ -38,10 +38,10 @@ const App = () => {
     <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
   );
 
-  if (courseGoals.length > 0) {
+  if (tasks.length > 0) {
     content = (
       <TaskList 
-        items={courseGoals} 
+        items={tasks} 
         onDeleteItem={deleteItemHandler} 
         onToggle={toggleReminder} 
       />
