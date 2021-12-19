@@ -5,13 +5,13 @@ import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
 
 const App = () => {
-  const [tasks, setCourseGoals] = useState([
+  const [tasks, setTasks] = useState([
     { text: 'Do all exercises!', id: 'g1', reminder: true},
     { text: 'Add your first task!', id: 'g2', reminder: false }
   ]);
 
   const addGoalHandler = enteredText => {
-    setCourseGoals(prevGoals => {
+    setTasks(prevGoals => {
       const updatedGoals = [...prevGoals];
       updatedGoals.unshift({ text: enteredText, id: Math.random().toString(), reminder: false });
       return updatedGoals;
@@ -19,14 +19,14 @@ const App = () => {
   };
 
   const deleteItemHandler = goalId => {
-    setCourseGoals(prevGoals => {
+    setTasks(prevGoals => {
       const updatedGoals = prevGoals.filter(goal => goal.id !== goalId);
       return updatedGoals;
     });
   };
   
   const toggleReminder = (id) => {
-    setCourseGoals(
+    setTasks(
       tasks.map((goal) =>
       goal.id === id  ? {...goal, reminder:
       !goal.reminder} : goal
@@ -59,7 +59,7 @@ const App = () => {
         {content}
         {/* {courseGoals.length > 0 && (
           <TaskList
-            items={courseGoals}
+            items={tasks}
             onDeleteItem={deleteItemHandler}
           />
         ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
