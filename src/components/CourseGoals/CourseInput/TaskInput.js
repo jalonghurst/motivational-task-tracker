@@ -33,7 +33,7 @@ import styles from './CourseInput.module.css';
 //   `;
 
 
-const CourseInput = props => {
+const TaskInput = props => {
   const [enteredValue, setEnteredValue] = useState('');
   const [isValid, setIsValid] = useState(true);
 
@@ -67,4 +67,4 @@ const CourseInput = props => {
   );
 };
 
-export default CourseInput;
+export default TaskInput;

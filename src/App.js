@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import TaskList from './components/CourseGoals/TaskList/TaskList';
-import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
+import TaskInput from './components/CourseGoals/CourseInput/TaskInput';
 import './App.css';
 
 const App = () => {
@@ -53,7 +53,7 @@ const App = () => {
     <div className="task-container"></div>
       <div className="task-container">
       <section id="goal-form">
-        <CourseInput onAddGoal={addGoalHandler} />
+        <TaskInput onAddGoal={addGoalHandler} />
       </section>
       <section id="goals">
         {content}
