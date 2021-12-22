@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import TaskList from './components/CourseGoals/TaskList/TaskList';
-import TaskInput from './components/CourseGoals/CourseInput/TaskInput';
+import TaskInput from './components/CourseGoals/TaskInput/TaskInput';
 import './App.css';
 
 const App = () => {
