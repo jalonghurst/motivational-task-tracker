@@ -59,6 +59,7 @@ const TaskInput = props => {
         <label>My Task Tracker</label>
         <input
           type="text"
+          placeholder='What do you want to achieve?'
           onChange={goalInputChangeHandler}
         />
       </div>
