@@ -6,6 +6,7 @@ import './TaskList.css';
 const TaskList = props => {
   return (
     <ul className="goal-list">
+      <p>*Tip: Double click on a task to mark as important</p>
       {props.items.map(goal => (
         <Task
           key={goal.id}
