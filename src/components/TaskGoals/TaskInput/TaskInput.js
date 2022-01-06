@@ -62,6 +62,11 @@ const TaskInput = props => {
           placeholder='What do you want to achieve?'
           onChange={goalInputChangeHandler}
         />
+         <input
+          type="text"
+          placeholder='Date and time'
+          onChange={goalInputChangeHandler}
+        />
       </div>
       <Button type="submit">Add Task</Button>
     </form>
