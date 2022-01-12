@@ -5,7 +5,7 @@
 .form-control label {
   font-weight: bold;
   display: block;
-  margin-bottom: 0.5rem;
+  margin: 1rem 0;
 }
 
 .form-control input {
