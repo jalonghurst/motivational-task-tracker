@@ -75,7 +75,7 @@ const TaskInput = props => {
         />
       </div>
       
-      <Button type="submit">Add Task</Button>
+      <Button type="submit">Save Task</Button>
     </form>
   );
 };
