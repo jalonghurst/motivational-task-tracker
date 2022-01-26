@@ -15,7 +15,8 @@ const TaskList = props => {
           onDelete={props.onDeleteItem}
           onToggle={props.onToggle}
         >
-          {goal.text}
+          <span>{goal.text}</span>
+          <p>{goal.date}</p>
         </Task>
       ))}
     </ul>

@@ -6,14 +6,14 @@ import './App.css';
 
 const App = () => {
   const [tasks, setTasks] = useState([
-    { text: 'Do all exercises!', id: 'g1', reminder: true},
-    { text: 'Add your first task!', id: 'g2', reminder: false }
+    { text: 'Do all exercises!', id: 'g1', date: 'Due on 25th Feburary 2022', reminder: true},
+    { text: 'Add your first task!', id: 'g2', date: 'Due on 16th March 2022', reminder: false }
   ]);
 
   const addGoalHandler = enteredText => {
     setTasks(prevGoals => {
       const updatedGoals = [...prevGoals];
-      updatedGoals.unshift({ text: enteredText, id: Math.random().toString(), reminder: false });
+      updatedGoals.unshift({ text: enteredText, date: enteredText, id: Math.random().toString(), reminder: false });
       return updatedGoals;
     });
   };

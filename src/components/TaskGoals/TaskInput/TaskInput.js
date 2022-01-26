@@ -62,10 +62,10 @@ const TaskInput = props => {
           placeholder='What do you want to achieve?'
           onChange={goalInputChangeHandler}
         />
-        <label>Date and time</label>
+        <label>Date & time</label>
          <input
           type="text"
-          placeholder='Date and time'
+          placeholder='Date & Time'
           onChange={goalInputChangeHandler}
         />
         <label>Make Priority?</label>
