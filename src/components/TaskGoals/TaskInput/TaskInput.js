@@ -68,9 +68,10 @@ const TaskInput = props => {
           placeholder='Date & Time'
           onChange={goalInputChangeHandler}
         />
-        <label>Make Priority?</label>
+        <label>Set Priority?</label>
          <input
           type="checkbox"
+          // value={reminder}
           onChange={goalInputChangeHandler}
         />
       </div>

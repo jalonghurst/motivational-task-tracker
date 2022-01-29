@@ -10,10 +10,10 @@ const App = () => {
     { text: 'Add your first task!', id: 'g2', date: 'Due on 16th March 2022', reminder: false }
   ]);
 
-  const addGoalHandler = enteredText => {
+  const addGoalHandler = (enteredText, enteredDate) => {
     setTasks(prevGoals => {
       const updatedGoals = [...prevGoals];
-      updatedGoals.unshift({ text: enteredText, date: enteredText, id: Math.random().toString(), reminder: false });
+      updatedGoals.unshift({ text: enteredText, date: enteredDate, id: Math.random().toString(), reminder: false });
       return updatedGoals;
     });
   };
