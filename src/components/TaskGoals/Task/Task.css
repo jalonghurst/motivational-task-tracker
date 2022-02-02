@@ -9,6 +9,7 @@
   background:#0C0E1B;
   /* Ensures  cross icons and text are spaced apart at either end */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
 }
