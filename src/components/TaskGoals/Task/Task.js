@@ -16,7 +16,7 @@ const Task = props => {
       className={`goal-item ${props.reminder ? 'reminder' : ''}`} 
       onDoubleClick={() => props.onToggle(props.id)}>
         {props.children} 
-        <GiCrossMark onClick={deleteHandler}/>
+        <GiCrossMark style={{alignSelf: 'center'}} onClick={deleteHandler}/>
     </li>
   );
 };
