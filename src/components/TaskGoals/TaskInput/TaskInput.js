@@ -35,9 +35,11 @@ import styles from './TaskInput.module.css';
 
 const TaskInput = props => {
   const [enteredValue, setEnteredValue] = useState('');
+  const [day, setDate] = useState('')
+  const [reminder, setReminder] = useState(false)
   const [isValid, setIsValid] = useState(true);
 
-  const goalInputChangeHandler = event => {
+  const taskInputChangeHandler = event => {
     if (event.target.value.trim().length > 0) {
       setIsValid(true);
     }
@@ -50,7 +52,7 @@ const TaskInput = props => {
       setIsValid(false);
       return;
     }
-    props.onAddGoal(enteredValue);
+    props.onAddGoal(enteredValue, day, reminder);
   };
 
   return (
@@ -60,19 +62,20 @@ const TaskInput = props => {
         <input
           type="text"
           placeholder='What do you want to achieve?'
-          onChange={goalInputChangeHandler}
+          onChange={taskInputChangeHandler}
         />
         <label>Date & time</label>
          <input
           type="text"
-          placeholder='Date & Time'
-          onChange={goalInputChangeHandler}
+          value={day}
+          placeholder='Add Date & Time'
+          onChange={(e) => setDate(e.target.value)}
         />
         <label>Set Priority?</label>
          <input
           type="checkbox"
-          // value={reminder}
-          onChange={goalInputChangeHandler}
+          value={reminder}
+          onChange={(e) => setReminder(e.currentTarget.checked)}
         />
       </div>
       
