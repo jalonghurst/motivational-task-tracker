@@ -43,6 +43,7 @@ const TaskInput = props => {
         <label>Set Priority?</label>
          <input
           type="checkbox"
+          checked={reminder}
           value={reminder}
           onChange={(e) => setReminder(e.currentTarget.checked)}
         />
