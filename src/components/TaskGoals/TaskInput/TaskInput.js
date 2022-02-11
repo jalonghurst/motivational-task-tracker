@@ -42,6 +42,7 @@ const TaskInput = props => {
         />
         <label>Set Priority?</label>
          <input
+          style={{ width: 'fit-content'}}
           type="checkbox"
           checked={reminder}
           value={reminder}
