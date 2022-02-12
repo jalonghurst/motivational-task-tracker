@@ -40,7 +40,7 @@ const TaskInput = props => {
           placeholder='Add Date & Time'
           onChange={(e) => setDate(e.target.value)}
         />
-        <label>Set Priority?</label>
+        <label>Mark as important?</label>
          <input
           style={{ width: 'fit-content'}}
           type="checkbox"
