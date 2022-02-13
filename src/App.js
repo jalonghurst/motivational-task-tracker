@@ -41,6 +41,7 @@ const App = () => {
   if (tasks.length > 0) {
     content = (
       <TaskList 
+        taskCount={tasks}
         items={tasks} 
         onDeleteItem={deleteItemHandler} 
         onToggle={toggleReminder} 
