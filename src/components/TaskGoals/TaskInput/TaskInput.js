@@ -41,7 +41,7 @@ const TaskInput = props => {
           onChange={(e) => setDate(e.target.value)}
         />
         <label>Mark as important?</label>
-        <p>*Tip: Double click on a task to mark/unmark as important</p>
+        <p>*Tip: You can double click on a task to mark/unmark as important</p>
          <input
           style={{ width: 'fit-content'}}
           type="checkbox"

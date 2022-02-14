@@ -6,7 +6,7 @@ import './TaskList.css';
 const TaskList = props => {
   return (
     <ul className="goal-list">
-      <span>Tasks left to complete = {props.taskCount.length}</span>
+      
       {props.items.map(goal => (
         <Task
           key={goal.id}
@@ -19,6 +19,7 @@ const TaskList = props => {
           <p>{goal.date}</p>
         </Task>
       ))}
+      <span>Tasks left to complete = {props.taskCount.length}</span>
     </ul>
   );
 };
