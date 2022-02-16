@@ -22,6 +22,11 @@ const TaskInput = props => {
       return;
     }
     props.onAddGoal(text, day, reminder);
+
+    // FIX: setText not clearing field on sumbit 
+    setText('')
+    setDate('')
+    setReminder(false)
   };
 
   return (
