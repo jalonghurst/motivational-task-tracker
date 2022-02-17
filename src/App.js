@@ -57,14 +57,7 @@ const App = () => {
         <TaskInput onAddGoal={addGoalHandler} />
       </section>
       <section id="goals">
-        {content}
-        {/* {courseGoals.length > 0 && (
-          <TaskList
-            items={tasks}
-            onDeleteItem={deleteItemHandler}
-          />
-        ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
-        } */}
+        {content}  
       </section>
       
       </div>
