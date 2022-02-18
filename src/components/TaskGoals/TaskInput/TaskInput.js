@@ -32,13 +32,13 @@ const TaskInput = props => {
   return (
     <form onSubmit={formSubmitHandler}>
       <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>
-        <label>My Task Tracker</label>
+        <label>Name Task </label>
         <input
           type="text"
           placeholder='What do you want to achieve?'
           onChange={taskInputChangeHandler}
         />
-        <label>Date & time</label>
+        <label>Date & Time</label>
          <input
           type="text"
           value={day}
@@ -56,7 +56,7 @@ const TaskInput = props => {
         />
       </div>
       
-      <Button type="submit">Save Task</Button>
+      <Button className="submit" type="submit">Save Task</Button>
     </form>
   );
 };

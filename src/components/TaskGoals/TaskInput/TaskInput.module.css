@@ -34,3 +34,7 @@
 /* .form-control.invalid label {
   color: red;
 } */
+
+.submit {
+  width: 100%;
+}

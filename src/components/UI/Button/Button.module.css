@@ -3,7 +3,7 @@
   font: inherit;
   padding: 0.5rem 1.5rem;
   border: 1px solid transparent;
-  color:#efefef;
+  color:#FE6F6B;
   background:#0C0E1B;
   border-radius: 1rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
@@ -23,6 +23,6 @@
 
 @media (min-width: 768px) {
   .button {
-    width: auto;}
+    flex: 1;}
        
      }
