@@ -19,7 +19,7 @@ const TaskList = props => {
           <p>{goal.date}</p>
         </Task>
       ))}
-      <span>Tasks left to complete = {props.taskCount.length}</span>
+      <span>Tasks left to complete ({props.taskCount.length})</span>
     </ul>
   );
 };
