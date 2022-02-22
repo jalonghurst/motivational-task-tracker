@@ -32,7 +32,7 @@ const TaskInput = props => {
   return (
     <form onSubmit={formSubmitHandler}>
       <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>
-        <label>Name Task </label>
+        <label>Task Name</label>
         <input
           type="text"
           placeholder='What do you want to achieve?'
