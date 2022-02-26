@@ -56,7 +56,9 @@ const App = () => {
     <div className="task-container"></div>
       <div className="task-container">
       <section id="goal-form">
-        <TaskHeader onAddGoal={() => setShowTaskForm(!showTaskForm)}/>
+        <TaskHeader 
+        onAddGoal={() => setShowTaskForm(!showTaskForm)}
+        showAddGoal =  {showTaskForm}/>
         {showTaskForm && <TaskInput onAddGoal={addGoalHandler} />}
       </section>
       <section id="goals">
