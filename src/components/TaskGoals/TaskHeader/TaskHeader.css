@@ -2,3 +2,12 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+h1 {
+    flex: 2;
+
+}
+
+Button {
+    flex:1;
+}
