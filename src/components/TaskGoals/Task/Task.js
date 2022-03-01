@@ -1,5 +1,5 @@
 import React from 'react';
-import {GiCrossMark} from 'react-icons/gi'
+import {GiCrossMark, GiCheckMark} from 'react-icons/gi'
 
 import './Task.css';
 
@@ -17,6 +17,7 @@ const Task = props => {
       onDoubleClick={() => props.onToggle(props.id)}>
         {props.children} 
         <GiCrossMark style={{alignSelf: 'center'}} onClick={deleteHandler}/>
+        <GiCheckMark style={{alignSelf: 'center'}}/>
     </li>
   );
 };

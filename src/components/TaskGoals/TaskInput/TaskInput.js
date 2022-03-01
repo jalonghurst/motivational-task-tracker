@@ -4,8 +4,8 @@ import styles from './TaskInput.module.css';
 
 const TaskInput = props => {
   const [text, setText] = useState('');
-  const [day, setDate] = useState('')
-  const [reminder, setReminder] = useState(false)
+  const [day, setDate] = useState('');
+  const [reminder, setReminder] = useState(false);
   const [isValid, setIsValid] = useState(true);
 
   const taskInputChangeHandler = event => {

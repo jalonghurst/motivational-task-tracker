@@ -53,7 +53,11 @@ const App = () => {
 
   return (
     <div  className="container"> 
-    <div className="task-container"></div>
+    {/* Pomodoro Section */}
+    <div className="task-container">
+
+    </div>
+    {/* Task List Section */}
       <div className="task-container">
       <section id="goal-form">
         <TaskHeader 
