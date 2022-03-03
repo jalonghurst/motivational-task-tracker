@@ -1,0 +1,13 @@
+.quote-container {
+    margin-top: 5%;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+    border: #09325c solid 2px;
+    border-radius: 5%;
+    font-family:  monospace, roboto-mono;
+    /* font-style: italic; */
+    color: #f5f6f7;
+    word-wrap: break-word;
+    text-align: center;
+  }

@@ -4,6 +4,7 @@ import TaskList from './components/TaskGoals/TaskList/TaskList';
 import TaskInput from './components/TaskGoals/TaskInput/TaskInput';
 import TaskHeader from './components/TaskGoals/TaskHeader/TaskHeader';
 import './App.css';
+import InspirationalQuotes from './components/InspirationalQuotes/InspirationalQuotes';
 
 const App = () => {
   const [showTaskForm, setShowTaskForm] = useState(true)
@@ -54,11 +55,7 @@ const App = () => {
   return (
     <div  className="container"> 
     {/* Pomodoro Section */}
-    <div className="task-container">
-
-    </div>
-    {/* Task List Section */}
-      <div className="task-container">
+    <div className="card">
       <section id="goal-form">
         <TaskHeader 
         onAddGoal={() => setShowTaskForm(!showTaskForm)}
@@ -68,9 +65,20 @@ const App = () => {
       <section id="goals">
         {content}  
       </section>
-      
       </div>
-     <span style={{color: "gray", textAlign: "center", paddingTop: "3%", paddingBottom: "1%", fontSize: "0.9rem"}}>Copyright ⓒ 2022 Jacqueline Longhurst. All Rights Reserved.</span>
+    {/* Task List Section */}
+      <div className="card">
+      <section id="goal-form">
+        <TaskHeader 
+        onAddGoal={() => setShowTaskForm(!showTaskForm)}
+        showAddGoal =  {showTaskForm}/>
+        {showTaskForm && <TaskInput onAddGoal={addGoalHandler} />}
+      </section>
+      <section id="goals">
+        {content}  
+      </section>
+      </div>
+    {/* <span className="footer" style={{color: "gray", textAlign: "center", paddingTop: "3%", paddingBottom: "1%", fontSize: "0.9rem"}}>Copyright ⓒ 2022 Jacqueline Longhurst. All Rights Reserved.</span> */}
     </div>
   );
 };
