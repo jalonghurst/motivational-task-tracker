@@ -1,14 +1,5 @@
-#goals, #goal-form {
-  width: 100%;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-  border: #09325c solid 2px;
-}
-
-
 .container {
+  padding: 5%;
   color:#c9ccea;
   display: flex;
   flex-direction: row;
@@ -21,7 +12,6 @@
 }
 
 .card {
-  margin-top: 5%;
   height: auto;
   padding: 5%;
   width:45%;
@@ -30,6 +20,15 @@
   color: #f5f6f7;
   /* word-wrap: break-word;
   text-align: center; */
+}
+
+#sub-card {
+  width: 100%;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  border: #09325c solid 2px;
 }
 
 .footer {

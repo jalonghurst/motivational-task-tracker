@@ -1,0 +1,10 @@
+.nav-bar {
+    width: 100%;
+    background-color: #09325c;
+    position: sticky;
+    border: none;
+}
+
+.logo {
+    width: 10%;
+}
