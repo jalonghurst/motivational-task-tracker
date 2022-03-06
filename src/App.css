@@ -3,7 +3,7 @@
   color:#c9ccea;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
   min-height: 100vh;
@@ -12,6 +12,7 @@
 }
 
 .card {
+  vertical-align: top;
   height: auto;
   padding: 5%;
   width:45%;
@@ -39,6 +40,8 @@
 @media (max-width: 1440px) {
   .container {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .card {
