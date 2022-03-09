@@ -8,3 +8,9 @@
 .logo {
     width: 10%;
 }
+
+@media (max-width: 1440px) {
+    .logo {
+        width: 11rem;
+    }
+}
