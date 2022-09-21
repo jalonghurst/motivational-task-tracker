@@ -57,14 +57,8 @@ const App = () => {
     {/* Pomodoro Section */}
     <div className="card">
       <section id="goal-form">
-        <TaskHeader 
-        onAddGoal={() => setShowTaskForm(!showTaskForm)}
-        showAddGoal =  {showTaskForm}/>
-        {showTaskForm && <TaskInput onAddGoal={addGoalHandler} />}
-      </section>
-      <section id="goals">
-        {content}  
-      </section>
+        <InspirationalQuotes/>
+        </section>
       </div>
     {/* Task List Section */}
       <div className="card">
