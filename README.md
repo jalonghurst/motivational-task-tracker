@@ -9,5 +9,3 @@
 
 
 ## Optimizations
-*(optional)*
-
